@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Colours */
+:root {
+  --black: #000000;
+  --black-menu: #101010;
+  --grey-back: #1c1c1c;
+  --grey-card: #161616;
+  --grey-card-over: #2a2a2a;
+}
+
+body {
+  color: whitesmoke;
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.col-2,
+.col-10 {
+  /* height: 100vh; */
+}
+
+.sidebar {
+  background-color: var(--black-menu);
+  position: relative;
+}
+
+.gallery {
+  background-color: var(--grey-back);
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.logo,
+.lenguage {
+  padding: 20px;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.btn {
+  color: white;
+  border-radius: 35px;
+  border: 1px solid gray;
+}
+
+.btn:hover {
+  border: 1px solid white;
+  scale: 1.05;
+}
+
+.lenguage {
+  position: absolute;
+  bottom: 0;
+}
+
+.lenguage .btn {
+  padding-top: 3px!important;
+  padding-bottom: 3px!important;
+}
+
+.card {
+  color: gray;
+  background-color: var(--grey-card);
+  margin: 8px;
+}
+
+.card:hover {
+  background-color: var(--grey-card-over);
+}
+
+.card-title {
+  color: white;
+}
+
+.row-gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spotify-player-song {
+  height: 100px;
+  width: 500px;
+  border: 1px solid var(--black);
+  background-color: var(--black);
+  position: fixed;
+  bottom: 0;
+  transform: translate(60%, -20%);
+}
+
+.spotify-button {
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+}
+
+.song-player-bar {
+  width: 280px;
+  height: 8px;
+  background-color: #eee;
+  border-radius: 20px;
+  border: 2px solid white;
+  position: absolute;
+  transform: translate(35%, 60%);
+  margin: 0;
+}
+
+.progress-bar {
+  width: 50%;
+  height: 100%;
+  background-color: #1c1c1c;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.cicle-progress {
+  height: 20px;
+  width: 20px;
+  background-color:#eee ;
+  border-radius: 100px;
+  position: relative;
+  transform: translate(610%, -60%);
+  margin: 0;
+  padding: 0;
+}
+
+.song-player-bar:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.progress-bar:hover {
+  background-color: rgba(13, 236, 13, 0.833);
+}
+
+.cicle-progress:hover {
+  background-color:#2a2a2a;
+}
+
+.bi {
+  margin: 0 20px;
+  color: white;
+}
+
+.bi-play-circle-fill {
+  font-size: 3rem;
+}
+
+.bi-arrow-left-circle-fill,
+.bi-arrow-right-circle-fill {
+  font-size: 2rem;
+  padding: 10px 0;
+}
+
+.bi-play-circle-fill:hover {
+  color: rgb(174, 174, 174);
+  cursor: pointer;
+}
+
+.bi-arrow-left-circle-fill:hover {
+  color: rgb(174, 174, 174);
+  cursor: pointer;
+}
+
+.bi-arrow-right-circle-fill:hover {
+  color: rgb(174, 174, 174);
+  cursor: pointer;
+}
+
+.bi-shuffle,
+.bi-repeat {
+  font-size: 25px;
+  position: absolute;
+}
+
+.bi-repeat {
+  transform: translate(-850%, 55%);
+}
+
+.bi-shuffle {
+  transform: translate(850%, 55%);
+}
+
+.bi-repeat:hover {
+  color: rgba(13, 236, 13, 0.833);
+  cursor: pointer;
+}
+
+.bi-shuffle:hover {
+  color: rgba(13, 236, 13, 0.833);
+  cursor: pointer;
+}
+
+.min-sx,
+.min-dx {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.min-dx {
+  position:absolute;
+  left: 93%;
+}
+
+.min-sx {
+  position:absolute;
+  left: 2%;
+}
+
+.min-dx:hover {
+  color: rgba(13, 236, 13, 0.833);
+  cursor: default;
+}
+
+.min-sx:hover {
+  color: rgba(13, 236, 13, 0.833);
+  cursor: default;
+}
